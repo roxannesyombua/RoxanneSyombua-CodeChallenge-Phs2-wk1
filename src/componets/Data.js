@@ -15,17 +15,17 @@ export const bankTransactions = [
     },
     {
         id:3,
-        date:"27/04/2024",
-        description:"snacks",
-        category: "foods",
-        amount: 20
+        date:"19/04/2024",
+        description:"books",
+        category: "stationery",
+        amount: 700
     },
     {
         id:4,
-        date:"27/04/2024",
-        description:"snacks",
-        category: "foods",
-        amount: 20
+        date:"22/04/2024",
+        description:"videos",
+        category: "entertainment",
+        amount: 1000
     },
     {
         id:5,

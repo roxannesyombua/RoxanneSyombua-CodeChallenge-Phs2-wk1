@@ -1,7 +1,7 @@
 import React from 'react'
 import "./TransactionItem.css"
 
-function TransactionItem() {
+function TransactionItem({props}) {
     return (
         <div className='TransactionItem'>
             <table class="table">
@@ -14,12 +14,15 @@ function TransactionItem() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>28/04/2024</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                    {props.map(({id, date, description, category, amount }) => (
+                    <tr key={(id)}>
+                        <td>{date}</td>
+                        <td>{description}</td>
+                        <td>{category}</td>
+                        <td>{amount}</td>
                     </tr>
+                    ))}
+
 
                 </tbody>
             </table>
